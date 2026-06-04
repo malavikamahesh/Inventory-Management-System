@@ -80,7 +80,7 @@ Inventory-Management-System/
 
 1. Clone the repository
 
-git clone https://github.com/your-username/Inventory-Management-System.git
+git clone (https://github.com/malavikamahesh/Inventory-Management-System.git)
 
 2. Open the project folder
 
