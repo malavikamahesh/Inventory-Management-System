@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>Inventory</h2>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="index.html">
+            Products
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1 class="head1">Inventory Dashboard</h1>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>Total Products</h3>
+                <span id="totalProducts"></span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Quantity</h3>
+                <span id="totalQty"></span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Inventory Value</h3>
+                <span id="inventoryValue"></span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Low Stock</h3>
+                <span id="lowStock"></span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Top Category</h3>
+                <span id="topCategory"></span>
+            </div>
+
+        </div>
+
+        <div class="chart-grid">
+
+            <div class="chart-card">
+                <h2>Category Breakdown</h2>
+                <canvas id="categoryChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h2>Product Quantity Chart</h2>
+                <canvas id="itemChart"></canvas>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

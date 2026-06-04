@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Inventory</h2>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="index.html">Products</a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1 class="head1">Product Management</h1>
+
+        <div class="card">
+
+            <form id="productForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Product Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="id"
+                    placeholder="Product ID"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="category"
+                    placeholder="Category"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Quantity"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Unit Price"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="supplier"
+                    placeholder="Supplier Name"
+                >
+
+
+                <button type="submit">
+                    Save Product
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Product..."
+            >
+
+            <button onclick="sortQuantity()">
+                Sort by Quantity
+            </button>
+
+            <button onclick="sortPrice()">
+                Sort by Price
+            </button>
+
+
+            <button onclick="clearAll()">
+                Clear All
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>Name</th>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Supplier</th>
+                <th>Actions</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="productTable">
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
