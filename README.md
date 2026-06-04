@@ -90,6 +90,13 @@ No additional setup or backend configuration is required.
 
 ---
 
+## On VS Code
+How To Run
+->Open project in VS Code
+->Install Live Server extension
+->Right click home.html
+->Open With Live Server
+
 ## Dashboard Metrics
 
 The dashboard automatically calculates:
